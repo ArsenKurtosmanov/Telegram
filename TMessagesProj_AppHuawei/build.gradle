@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.huawei.agconnect'
+// Временно отключено для разработки
+// apply plugin: 'com.huawei.agconnect'
 
 repositories {
     mavenCentral()
@@ -37,14 +38,10 @@ android {
 
     sourceSets.main.jniLibs.srcDirs = ['../TMessagesProj/jni/']
 
-    lintOptions {
+    lint {
         disable 'MissingTranslation'
         disable 'ExtraTranslation'
         disable 'BlockedPrivateApi'
-    }
-
-    dexOptions {
-        jumboMode = true
     }
 
     compileOptions {
@@ -56,14 +53,14 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file("../TMessagesProj/config/release.keystore")
+            storeFile file("../TMessagesProj/config/liberty.keystore")
             storePassword RELEASE_STORE_PASSWORD
             keyAlias RELEASE_KEY_ALIAS
             keyPassword RELEASE_KEY_PASSWORD
         }
 
         release {
-            storeFile file("../TMessagesProj/config/release.keystore")
+            storeFile file("../TMessagesProj/config/liberty.keystore")
             storePassword RELEASE_STORE_PASSWORD
             keyAlias RELEASE_KEY_ALIAS
             keyPassword RELEASE_KEY_PASSWORD
@@ -157,11 +154,12 @@ android {
     buildFeatures {
         buildConfig = true
     }
-    namespace 'org.telegram.messenger.huawei'
+    namespace 'com.messenger.secure.huawei'
 
-    lintOptions {
+    lint {
         checkReleaseBuilds false
     }
 }
 
-apply plugin: 'com.google.gms.google-services'
+// Временно отключено для разработки
+// apply plugin: 'com.google.gms.google-services'

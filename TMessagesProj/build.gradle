@@ -74,6 +74,7 @@ android {
     buildToolsVersion '34.0.0'
     buildFeatures {
         viewBinding true
+        buildConfig = true
     }
     ndkVersion "21.4.7075529"
 
@@ -85,14 +86,10 @@ android {
         }
     }
 
-    lintOptions {
+    lint {
         disable 'MissingTranslation'
         disable 'ExtraTranslation'
         disable 'BlockedPrivateApi'
-    }
-
-    dexOptions {
-        jumboMode = true
     }
 
     compileOptions {
@@ -206,7 +203,7 @@ android {
             buildConfigField "boolean", "BUILD_HOST_IS_WINDOWS", isWindows
         }
     }
-    namespace 'org.telegram.messenger'
+    namespace 'com.messenger.secure'
 }
 
 
@@ -220,7 +217,8 @@ def getProps(String propName) {
         return "";
     }
 }
-apply plugin: 'com.google.gms.google-services'
+// Временно отключено для разработки
+// apply plugin: 'com.google.gms.google-services'
 
 task checkVisibility {
     doFirst {

@@ -3619,18 +3619,6 @@ public class ProfileActivity extends BaseFragment implements NotificationCenter.
         }
 
         createActionBarMenu(false);
-
-        binding = ProfileActivityBinding.inflate(getLayoutInflater(), null, false);
-        View root = binding.getRoot();
-        binding.avatarView.setOnClickListener(v -> {
-            if (binding.profileMotionLayout.getProgress() == 0f) {
-                binding.profileMotionLayout.transitionToEnd();
-            } else {
-                binding.profileMotionLayout.transitionToStart();
-            }
-        });
-        return root;
-            } else if (position == notificationsRow) {
                 if (LocaleController.isRTL && x <= AndroidUtilities.dp(76) || !LocaleController.isRTL && x >= view.getMeasuredWidth() - AndroidUtilities.dp(76)) {
                     NotificationsCheckCell checkCell = (NotificationsCheckCell) view;
                     boolean checked = !checkCell.isChecked();

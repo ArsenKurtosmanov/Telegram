@@ -14,4 +14,7 @@
     <color name="profile_text_secondary">#666666</color>
     <color name="button_bg">#E0E0E0</color>
     <color name="button_text">#000000</color>
+    <!-- Liberty app icon colors -->
+    <color name="liberty_background">#4FC3F7</color>
+    <color name="liberty_primary">#2196F3</color>
 </resources>

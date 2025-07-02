@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">Telegram</string>
-    <string name="AppNameBeta">Telegram Beta</string>
+    <string name="AppName">Liberty</string>
+    <string name="AppNameBeta">Liberty Beta</string>
+    <string name="app_name">Liberty</string>
     <string name="LanguageName">English</string>
     <string name="English">English</string>
     <string name="LanguageNameInEnglish">English</string>
@@ -9269,4 +9270,30 @@
     <string name="RecordingTrimText">Audio outside that range will be discarded, and recording will start immediately.</string>
     <string name="MessageAuthorSentBy">Sent by **%s**</string>
     <string name="ChannelOpenDirect">Direct Messages</string>
+    
+    <!-- Добавленные недостающие строки для исправления ошибок сборки -->
+    <string name="AddManyMembersAlertNamesText_few">Add %1$s and %2$d others</string>
+    <string name="AddManyMembersAlertNamesText_two">Add %1$s and %2$d others</string>
+    <string name="AddManyMembersAlertTitle_few">Add %1$d Members</string>
+    <string name="AddManyMembersAlertTitle_many">Add %1$d Members</string>
+    <string name="AddManyMembersAlertTitle_two">Add %1$d Members</string>
+    <string name="EmailPasswordConfirmText3">Please confirm your password to complete the setup.</string>
+    <string name="Languages_few">%1$d Languages</string>
+    <string name="Languages_many">%1$d Languages</string>
+    <string name="Languages_two">%1$d Languages</string>
+    <string name="Languages_zero">No Languages</string>
+    <string name="NoContactsYet">No contacts yet</string>
+    <string name="NoContactsYetLine1">You have no contacts yet.</string>
+    <string name="NoContactsYetLine2">Start by adding some contacts</string>
+    <string name="NoContactsYetLine3">or invite your friends to Telegram.</string>
+    <string name="PleaseEnterFirstPassword">Please enter your first password</string>
+    <string name="PleaseEnterPassword">Please enter your password</string>
+    <string name="ResetAccountButton">Reset Account</string>
+    <string name="ResetMyAccountText">This will delete your account</string>
+    <string name="WidgetPasscodeEnable2">Enable widget passcode</string>
+    <string name="YourEmailCode">Your email code</string>
+    <string name="YourEmailCodeInfo">We sent you a code to your email</string>
+    <string name="YourPasswordSuccessText">Password successfully set</string>
+    <string name="formatterMonthName">%s</string>
+    <string name="formatterMonthYear2">%s %d</string>
 </resources>

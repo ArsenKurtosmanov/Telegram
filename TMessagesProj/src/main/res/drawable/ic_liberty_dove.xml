@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- Простой фон -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M12,2 L22,12 L12,22 L2,12 Z"/>
+    
+    <!-- Простая птица -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M8,10 L16,10 L14,14 L10,14 Z"/>
+    
+    <!-- Крыло -->
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M6,9 L12,12 L8,15 Z"/>
+        
+</vector> 
